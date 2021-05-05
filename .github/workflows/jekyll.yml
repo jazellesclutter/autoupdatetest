@@ -5,7 +5,8 @@ on:
     branches:
       - 'main'
       - 'dev'
-      
+  schedule:
+      - cron:  '0 18 * * 1,2,3,4,5'  # Runs at 09:00 UTC on the 1st of every month    
   workflow_dispatch:
 
 jobs:
